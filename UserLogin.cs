@@ -67,8 +67,6 @@ namespace HospRecMan
             }
             else
                 MessageBox.Show("Username or Password Invalid");
-
-            
         }
     }
 }
