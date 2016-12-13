@@ -33,7 +33,6 @@
             this.btnViewPatRecord = new System.Windows.Forms.Button();
             this.btnAddMedStaff = new System.Windows.Forms.Button();
             this.btnDelProfile = new System.Windows.Forms.Button();
-            this.btnUpdRecord = new System.Windows.Forms.Button();
             this.btnResetPass = new System.Windows.Forms.Button();
             this.panelDeleteRecords = new System.Windows.Forms.Panel();
             this.buttonDeleteAccount = new System.Windows.Forms.Button();
@@ -83,7 +82,7 @@
             // 
             // btnViewPatRecord
             // 
-            this.btnViewPatRecord.Location = new System.Drawing.Point(224, 12);
+            this.btnViewPatRecord.Location = new System.Drawing.Point(234, 15);
             this.btnViewPatRecord.Name = "btnViewPatRecord";
             this.btnViewPatRecord.Size = new System.Drawing.Size(140, 23);
             this.btnViewPatRecord.TabIndex = 15;
@@ -93,7 +92,7 @@
             // 
             // btnAddMedStaff
             // 
-            this.btnAddMedStaff.Location = new System.Drawing.Point(224, 51);
+            this.btnAddMedStaff.Location = new System.Drawing.Point(234, 51);
             this.btnAddMedStaff.Name = "btnAddMedStaff";
             this.btnAddMedStaff.Size = new System.Drawing.Size(140, 23);
             this.btnAddMedStaff.TabIndex = 16;
@@ -103,7 +102,7 @@
             // 
             // btnDelProfile
             // 
-            this.btnDelProfile.Location = new System.Drawing.Point(224, 89);
+            this.btnDelProfile.Location = new System.Drawing.Point(234, 87);
             this.btnDelProfile.Name = "btnDelProfile";
             this.btnDelProfile.Size = new System.Drawing.Size(140, 23);
             this.btnDelProfile.TabIndex = 17;
@@ -111,19 +110,9 @@
             this.btnDelProfile.UseVisualStyleBackColor = true;
             this.btnDelProfile.Click += new System.EventHandler(this.btnDelProfile_Click);
             // 
-            // btnUpdRecord
-            // 
-            this.btnUpdRecord.Location = new System.Drawing.Point(224, 133);
-            this.btnUpdRecord.Name = "btnUpdRecord";
-            this.btnUpdRecord.Size = new System.Drawing.Size(140, 23);
-            this.btnUpdRecord.TabIndex = 18;
-            this.btnUpdRecord.Text = "Update record";
-            this.btnUpdRecord.UseVisualStyleBackColor = true;
-            this.btnUpdRecord.Click += new System.EventHandler(this.btnUpdRecord_Click);
-            // 
             // btnResetPass
             // 
-            this.btnResetPass.Location = new System.Drawing.Point(224, 172);
+            this.btnResetPass.Location = new System.Drawing.Point(234, 129);
             this.btnResetPass.Name = "btnResetPass";
             this.btnResetPass.Size = new System.Drawing.Size(140, 23);
             this.btnResetPass.TabIndex = 19;
@@ -427,7 +416,6 @@
             this.Controls.Add(this.panelResetPassword);
             this.Controls.Add(this.panelDeleteRecords);
             this.Controls.Add(this.btnResetPass);
-            this.Controls.Add(this.btnUpdRecord);
             this.Controls.Add(this.btnDelProfile);
             this.Controls.Add(this.btnAddMedStaff);
             this.Controls.Add(this.btnViewPatRecord);
@@ -452,7 +440,6 @@
         private System.Windows.Forms.Button btnViewPatRecord;
         private System.Windows.Forms.Button btnAddMedStaff;
         private System.Windows.Forms.Button btnDelProfile;
-        private System.Windows.Forms.Button btnUpdRecord;
         private System.Windows.Forms.Button btnResetPass;
         private System.Windows.Forms.Panel panelDeleteRecords;
         private System.Windows.Forms.Panel panelResetPassword;
