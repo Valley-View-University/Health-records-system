@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace HospRecMan
 {
@@ -17,6 +18,7 @@ namespace HospRecMan
             InitializeComponent();
         }
 
+        SqlConnection con = new SqlConnection(@"Data Source=(localdb)\v11.0;Initial Catalog=HOSPITALRECORDS;Integrated Security=True");
         private void patientRecordsBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
             this.Validate();
@@ -30,6 +32,18 @@ namespace HospRecMan
             // TODO: This line of code loads data into the 'hOSPITALRECORDSDataSet.PatientRecords' table. You can move, or remove it, as needed.
             this.patientRecordsTableAdapter.Fill(this.hOSPITALRECORDSDataSet.PatientRecords);
 
+        }
+
+        private void buttonSearch_Click(object sender, EventArgs e)
+        {
+            DataTable dt = new DataTable();
+            SqlDataAdapter SDA = new SqlDataAdapter("SELECT * FROM PatientRecords WHERE  PatientID = '"+textBoxSearch.Text +"'",con);
+            try
+            {
+                SDA.Fill(dt);
+                dataGridView1.DataSource = dt;
+            }
+            catch (Exception ex) { MessageBox.Show(ex.Message); }
         }
     }
 }
